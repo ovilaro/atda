@@ -353,7 +353,7 @@ class _TasksTabState extends State<_TasksTab> {
                       physics: const NeverScrollableScrollPhysics(),
                       buildDefaultDragHandles: false,
                       itemCount: active.length,
-                      onReorder: (oldIndex, newIndex) => provider.reorderActiveTask(oldIndex, newIndex),
+                      onReorderItem: (oldIndex, newIndex) => provider.reorderActiveTask(oldIndex, newIndex),
                       itemBuilder: (context, index) => _activeTaskTile(active[index], provider, index),
                     ),
                   if (completed.isNotEmpty)
